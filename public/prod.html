@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="fac.html">
+    <title>Sports Managment</title>
+  </head>
+  <style>
+  .mx-2 a{
+    text-decoration: none;
+    color:lightcoral;
+  }
+  .mx-2 a:hover{
+    text-decoration: none;
+    color: white;
+
+  }
+  body{
+    background-color: url("https://images.pexels.com/photos/68357/pexels-photo-68357.jpeg?cs=srgb&dl=pexels-sabeel-ahammed-68357.jpg&fm=jpg");
+  }
+  /* Dropdown container style */
+  .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    /* Change color on hover */
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    /* Light Mode Styles */
+/* Add this CSS for the theme slider */
+/* Add this CSS for the theme slider */
+/* Light Theme Styles */
+body:not(.dark-mode) {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+body:not(.dark-mode) a {
+    color: #007bff; /* Link color in light mode */
+}
+
+/* Dark Theme Styles */
+.dark-mode {
+    background-color: #333333;
+    color: black;
+}
+
+.dark-mode a {
+    color: #00ccff; /* Link color in dark mode */
+}
+/* Style for the login status pop-up */
+
+/* .container{
+  margin-top: 50px;
+} */
+
+
+
+
+
+  
+  </style>
+  <body class="light-mode">
+    
+  </div>
+  
+   
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"  >
+
+        <a class="navbar-brand" href="#"><img src="GNDEC SPORTS-logos_white (1).png" width="50px" height="50px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          <!-- Add this button to your HTML -->
+
+
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="/gallery">Upload Photos<span class="badge badge-success"></a></a>  
+            </li>  
+            <li class="nav-item">
+                <a class="nav-link" href="gallery2.html">Gallery<span class="sr-only">(current)</span></a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/inventory">Inventory<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="fac2.html">Facilities<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="prod.html">Products<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <div class="dropdown">
+                  <a class="nav-link" href="#">Matches<span class="sr-only">(current)</span></a>
+                  <div class="dropdown-content">
+                    <a href="/schedule">Schedule</a>
+                    <a href="/results">Results</a>
+                  </div>
+                </div>
+              </li>  
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Contact-Us<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <div class="dropdown">
+                  <a class="nav-link" >Event Registration<span class="sr-only">(current)</span></a>
+                  <div class="dropdown-content">
+                    <a href="/registerEvent">Solo Event</a>
+                    <a href="/teameventregister.html">Team Event</a>
+                    <a href="/teamdata">Show Team Data</a>
+                  </div>
+                </div>
+            </li>
+          </ul>
+          
+ 
+ <!-- Add this checkbox input and label to your HTML -->
+ 
+
+
+
+         
+          
+          <div class="mx-2">
+            
+            
+              <button type="button3 loginoptions" id="theme-toggle"class="btn btn-outline-danger" style="display:block;"><a href="/register" ></a>THEME</button>
+            </div>
+            
+          
+            <button type="button" id="signUpButton" class="btn btn-outline-danger" style="display:block;"><a href="/register">Sign Up</a></button>
+            
+          </div>
+         
+          <div class="mx-2">
+            <button type="button" id="loginButton" class="btn btn-outline-danger" style="display:block;"><a href="/login.html">Login</a></button>
+          </div>
+          <div>
+            <button type="button" id="logoutButton" class="btn btn-outline-danger" style="display:none;" onclick="window.location.href = '/login.html';">Log Out</button>
+
+
+          </div>
+          
+        </div>
+        
+        
+      </nav>
+      <div class="container my-4">
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkPDB2gm7vSmvcnX0dJcVMUNFB0NZehGUQ5Q&usqp=CAU" alt=""height="300px">
+  
+              <div class="card-body">
+                <p class="card-text">The fundamental objective of basketball is to score points by shooting the ball through the opponent's hoop.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="window.location.href = 'https://en.wikipedia.org/wiki/Basketball';">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary"onclick="window.location.href = 'https://shorturl.at/xKX37';">Purchase</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+            <img src="https://c.static-nike.com/a/images/f_auto,cs_srgb/w_1536,c_limit/g1ljiszo4qhthfpluzbt/123-joyride-cdp-apla-xa-xp.jpg"height="300px">  
+              <div class="card-body">
+                <p class="card-text">Sports shoes are designed with a primary purpose - to enhance athletic performance during physical activity.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"onclick="window.location.href = 'https://orthoinfo.aaos.org/en/staying-healthy/athletic-shoes/#:~:text=Wearing%20the%20appropriate%20athletic%20shoe,feet%2C%20ankles%2C%20and%20legs.';">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary"onclick="window.location.href = 'https://shorturl.at/JKMS9';">Purchase</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="https://www.sportsuncle.com/image/cache/catalog/images/mrf/mrf-game-changer-1200x1200.webp"height="300px">  
+              <div class="card-body">
+                <p class="card-text">Bats are a fascinating and diverse group of mammals belonging to the order Chiroptera. </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"onclick="window.location.href = 'https://en.wikipedia.org/wiki/Cricket';">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary"onclick="window.location.href = 'https://www.flipkart.com/strauss-cricket-bat-pro-men-size-short-handle-kashmir-willow/p/itmc2aac98d0a9dc?pid=BATGTGPT6HYHYH4R&lid=LSTBATGTGPT6HYHYH4RLFOCV2&marketplace=FLIPKART&store=abc%2F5lf%2Fp8v&srno=b_1_1&otracker=browse&fm=organic&iid=en_H_YpGgOQuvYCV0k8pOykj9Y5hAIyUnz-Y_U3mzbYuJzb__pfXioIYGgV9jqbxdVyEZWBnaTyX8vZtlfGn9DVpQ%3D%3D&ppt=browse&ppn=browse&ssid=apyr3baneo0000001698367709467';">Purchase</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src=" https://static.vecteezy.com/system/resources/previews/014/622/870/original/badminton-bat-for-hitting-shuttlecocks-in-indoor-sports-png.png" height="300px">  
+              <div class="card-body">
+                <p class="card-text">
+                  Badminton is a fast-paced and exhilarating racket sport that has captivated players and fans around the world for many decades.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"onclick="window.location.href = 'https://en.wikipedia.org/wiki/Badminton';">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary"onclick="window.location.href = 'https://shorturl.at/fnwGM';">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTJ3TsjiT3b7dik-YESUwW1z1yF3LdM0jjuw&usqp=CAU" alt=""height="300px">
+  
+              <div class="card-body">
+                <p class="card-text">Football, often referred to as soccer in the United States, is one of the world's most beloved and widely played sports.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"onclick="window.location.href = 'https://en.wikipedia.org/wiki/Football';">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary"onclick="window.location.href = 'https://www.flipkart.com/nivia-storm-football-size-5/p/itmf9ghreytypn55?pid=BALDYQ2TJVGKE7JP&lid=LSTBALDYQ2TJVGKE7JPW8AOOT&marketplace=FLIPKART&q=football&store=abc%2Fgxg&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=en_M7LxxdvVS83GC1Ft5xjHBGpHlGlrhv9-cMk8u8fPczLZjphe51XspzZ8n49MGXAv0Zt25kxjWerKWd7fZ4jB8Q%3D%3D&ppt=pp&ppn=pp&ssid=1rofpz53800000001698373450191&qH=37b4e2d82900d5e9';">Purchase</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img src="https://m.media-amazon.com/images/I/51KYfl69IpL._SX300_SY300_QL70_FMwebp_.jpg" alt=""height="300px">
+  
+              <div class="card-body">
+                <p class="card-text">Cricket gloves are essential protective gear for batsmen and wicket-keepers. They protect the hands from: Impact, Abrasion.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"onclick="window.location.href = 'https://blog.decathlon.in/articles/cricket-importance-of-gloves-and-leg-pads-for-kids-cricket-training';">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary"onclick="window.location.href = 'https://www.flipkart.com/arrowmax-cricket-batting-gloves-men-boys-girls-unisex-right/p/itm6cf756f4ecf32?pid=SGEGUD7GKNFREYMY&lid=LSTSGEGUD7GKNFREYMY6AZHVQ&marketplace=FLIPKART&q=cricket+gloves&store=abc%2F5lf%2Fjjn&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=en_Vb028OYDExoW67NCOhpzWpfPAd3Xx0bkIfYno-I1Jitw4t1VdIpzx2GzkOqf_5ZF2BehimJ2sw6STGi-Ov2L0w%3D%3D&ppt=sp&ppn=sp&ssid=o28ixunh7k0000001698373512541&qH=b08816b01bf1cc62';">Purchase</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+             <img src="https://m.media-amazon.com/images/I/611V7euowPL._AC_UY1100_.jpg" alt=""height="300px">
+  
+              <div class="card-body">
+                <p class="card-text">Swimming offers a wide range of physical, mental, and social benefits. Whether you're a competitive swimmer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"onclick="window.location.href = 'https://en.wikipedia.org/wiki/Swimming_(sport)';">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary"onclick="window.location.href = 'https://www.flipkart.com/slovic-swimming-goggles-girls-boys-accessories-ear-plug/p/itmf94395f0f5b39?pid=GOGGQAP4R9PSFVCE&lid=LSTGOGGQAP4R9PSFVCECYSLLD&marketplace=FLIPKART&q=swimming+googles&store=abc%2Fbyq%2Fptx&srno=s_1_11&otracker=search&otracker1=search&fm=Search&iid=en_4i-3x0EA3oCHF3Mj75CyC3wwubSKIDfqD8jPaUvWtk4-oDjB1ie39YX_o2ynPrrqgdykqPuyF1EhwrhgH_WbFQ%3D%3D&ppt=sp&ppn=sp&ssid=ocuwphgzao0000001698373929547&qH=5fbcfe86452ce45b';">Purchase</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkxVXQ9ZEBpMMnkGHhq9c7x7MLhyPWdR15sA&usqp=CAU" alt=""height="300px">
+  
+              <div class="card-body">
+                <p class="card-text">Tennis is a popular and widely played sport with a rich history, known for its competitive nature. </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"onclick="window.location.href = 'https://en.wikipedia.org/wiki/Tennis';">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary"onclick="window.location.href = 'https://www.flipkart.com/vector-x-vxt-520-26-inches-green-strung-tennis-racquet/p/itm053d20c94f127?pid=RAQGEPZMPZ7B9JYT&lid=LSTRAQGEPZMPZ7B9JYTJ2VBCF&marketplace=FLIPKART&q=Tennis&store=search.flipkart.com&srno=s_1_2&otracker=search&otracker1=search&fm=Search&iid=bb111796-b440-4394-9be6-c79ed4fbb800.RAQGEPZMPZ7B9JYT.SEARCH&ppt=sp&ppn=sp&ssid=m365mnoy4g0000001698374026194&qH=0c493d20a11930e4';">Purchase</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+             <img src="https://images-na.ssl-images-amazon.com/images/I/91mrx%2BlAYdL.jpg" alt=""height="300px">
+  
+              <div class="card-body">
+                <p class="card-text">Cricket Australia's tagline is "There's Nothing Like Cricket". The campaign celebrates the international cricket.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary"onclick="window.location.href = 'https://en.wikipedia.org/wiki/Cricket_clothing_and_equipment';">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary"onclick="window.location.href = 'https://www.flipkart.com/puma-solid-sports-regular-cap/p/itm27ed965558ace?pid=CAPFYNFZFQJQYG6N&lid=LSTCAPFYNFZFQJQYG6NDKQRYX&marketplace=FLIPKART&q=caps&store=clo%2Fqd8%2Fy9u&srno=s_1_16&otracker=search&otracker1=search&fm=Search&iid=10c7b1ae-7435-40ad-8971-850d638744c0.CAPFYNFZFQJQYG6N.SEARCH&ppt=sp&ppn=sp&ssid=xfypya9zk00000001698374145851&qH=69cd8955be4678b9';">Purchase</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+
+    <script>
+    
+// Make an AJAX request to check the user's login status
+fetch('/api/check-login-status')
+    .then(response => response.json())
+    .then(data => {
+        // Check the data to determine the user's login status
+        if (data.isLoggedIn) {
+            // Display personalized content
+            document.getElementById('greeting').textContent = 'Welcome, ' + data.username + '!';
+            document.getElementById('role_message').textContent = 'You are logged in a ' + data.role;
+        }
+    })
+    .catch(error => {
+        console.error('Error checking login status:', error);
+    });
+  </script>
+  
+
+
+<script src="Byte Brewers Final Website\public\script.js"></script>
+<!-- <script>
+  // JavaScript for theme slider
+  const themeToggle = document.getElementById('theme-toggle');
+  themeToggle.addEventListener('change', function () {
+      const body = document.body;
+      if (themeToggle.checked) {
+          // Switch to dark mode
+          body.classList.remove('light-mode');
+          body.classList.add('dark-mode');
+      } else {
+          // Switch to light mode
+          body.classList.remove('dark-mode');
+          body.classList.add('light-mode');
+      }
+  });
+  </script> -->
+ 
+  <script src="theme.js"></script>
+  <script>
+    // Make an AJAX request to check the user's login status
+    fetch('/api/check-login-status')
+        .then(response => response.json())
+        .then(data => {
+            // Check the data to determine the user's login status
+            if (data.isLoggedIn) {
+                // User is logged in
+                document.getElementById('loginButton').style.display = 'none';  // Hide Login
+                document.getElementById('signUpButton').style.display = 'none';  // Hide Sign Up
+                document.getElementById('logoutButton').style.display = 'block'; // Show Log Out
+            }
+        })
+        .catch(error => {
+            console.error('Error checking login status:', error);
+        });
+    </script>
+    
+    <script>
+      function logoutUser() {
+          fetch('/logout', {
+              method: 'POST',
+              credentials: 'same-origin' // Include cookies for the request
+          })
+          .then(response => response.json())
+          .then(data => {
+              // Handle the response, e.g., redirect the user or update the UI
+              if (data.success) {
+                  // User is successfully logged out
+                  window.location.href = '/login.html'; // Redirect to the login page
+              }
+          })
+          .catch(error => {
+              console.error('Error logging out:', error);
+          });
+      }
+      </script>
+      
+  
+  
+  </script>
+  
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
